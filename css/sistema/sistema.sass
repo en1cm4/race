@@ -1,0 +1,93 @@
+.header
+    width: 100%
+    height: 8vh
+    background-color: #912F56 
+    overflow: hidden
+    border-bottom: 5px solid #521945
+    .row    
+        display: flex
+
+        .element
+            transition: 0.3s
+            display: flex
+            flex-direction: column
+            align-items: center
+            margin: 0 5px
+            width: 40px
+            img
+                margin: 10px 0
+                width: 30px
+            &:hover
+                background: #621b38
+                // width: 40px
+                margin: 0 10px
+
+.contenido  
+    display: flex
+    height: 90vh
+    .lateral
+        transition: 0.3s
+        width: 50px
+        height: 100%
+        white-space: nowrap
+        background: #A69CAC
+        border-right: 5px solid #474973
+        .pestanas   
+            ul
+                list-style: none
+                display: flex
+                border-bottom: 5px solid #474973
+                li  
+                    transition: 0.3s
+                    color: transparent
+                    text-align: center
+                    width: 50%
+                    padding: 20px 0
+                    &:hover
+                        background-color: #474973
+        .modulos
+
+            background-color: #F1DAC4
+            ul
+                li
+                    display: flex
+                    align-items: center
+
+                    img
+                        padding: 10px
+                        width: 30px
+                    span
+                        margin-left: 20px
+                    &:hover
+                        background-color: #e2c6aa
+
+
+        &:hover
+            width: 30vw
+        &:hover .pestanas ul li
+            color: black
+    .estadistica
+        
+        width: 100% 
+        background: linear-gradient(#D2B2C0, #E8D8DF)
+        padding: 20px
+        h2
+            margin-bottom: 10px
+        .ventanas
+            width: 100%
+            display: flex
+            flex-wrap: wrap
+            justify-content: space-around  
+            .ventana
+                min-width: 20%
+                max-width: 30%
+                height: 200px
+                padding: 10px
+                margin: 10px
+                border-radius: 10px
+                background-color: #EAF2EF
+                display: flex
+                flex-direction: column
+                img
+                    width: 100%
+                
